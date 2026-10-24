@@ -8,5 +8,8 @@ var router = express.Router();
 // });
 
 router.post('/',register);
+router.get('/', (req, res) => {
+    res.send('API is running successfully!');
+});
 
 module.exports = router;
